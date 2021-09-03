@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0A732D26C42058001BA80B /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A732C26C42058001BA80B /* ProductsView.swift */; };
+		7F0A733126C428BE001BA80B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A733026C428BE001BA80B /* SideMenu.swift */; };
+		7F0A733326C45B8B001BA80B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A733226C45B8B001BA80B /* Functions.swift */; };
+		7F0A733526C45C3F001BA80B /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A733426C45C3F001BA80B /* AuthenticationView.swift */; };
+		7F0A733726C45D99001BA80B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A733626C45D99001BA80B /* Extensions.swift */; };
+		7F0A733A26C45E50001BA80B /* SideMenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A733926C45E50001BA80B /* SideMenuContent.swift */; };
+		7F0A733C26C46186001BA80B /* SingleProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0A733B26C46186001BA80B /* SingleProductView.swift */; };
+		7F2D60FA26C7DD0200BE4554 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D60F926C7DD0200BE4554 /* UserViewModel.swift */; };
+		7F2D60FC26C8163400BE4554 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D60FB26C8163400BE4554 /* Banner.swift */; };
+		7F49F00C26C3F18F009B1BD4 /* FlickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F49F00B26C3F18F009B1BD4 /* FlickApp.swift */; };
+		7F49F00E26C3F18F009B1BD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F49F00D26C3F18F009B1BD4 /* ContentView.swift */; };
+		7F49F01026C3F190009B1BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F49F00F26C3F190009B1BD4 /* Assets.xcassets */; };
+		7F49F01326C3F190009B1BD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F49F01226C3F190009B1BD4 /* Preview Assets.xcassets */; };
+		7F49F01B26C3FCD6009B1BD4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F49F01A26C3FCD6009B1BD4 /* CustomTextField.swift */; };
+		7F4D561626C567F4000DF06C /* SingleCartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D561526C567F4000DF06C /* SingleCartItemView.swift */; };
+		7F61ECDA26D00AAD007A7A2F /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61ECD926D00AAD007A7A2F /* Other.swift */; };
+		7F7705DF26C56CBA00C217CD /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7705DE26C56CBA00C217CD /* ShoppingCartView.swift */; };
+		7F7705E126C57BBB00C217CD /* ShoppingCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7705E026C57BBB00C217CD /* ShoppingCartViewModel.swift */; };
+		7FA2C77F26C4131800996B23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FA2C77E26C4131800996B23 /* GoogleService-Info.plist */; };
+		7FA2C78126C4137B00996B23 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2C78026C4137B00996B23 /* AuthViewModel.swift */; };
+		7FA2C78326C413B900996B23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2C78226C413B900996B23 /* User.swift */; };
+		7FA2C78526C415F200996B23 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2C78426C415F200996B23 /* CartItem.swift */; };
+		7FA2C78726C41B3E00996B23 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2C78626C41B3E00996B23 /* Product.swift */; };
+		7FA2C78926C41BAD00996B23 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2C78826C41BAD00996B23 /* ProductsViewModel.swift */; };
+		7FA2C78B26C41C6000996B23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2C78A26C41C6000996B23 /* Constants.swift */; };
+		D041837BABC235A49CD1BE6B /* Pods_Flick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DD90B20946B361846D7155 /* Pods_Flick.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		213361DB23329A3A7D99B709 /* Pods-Flick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.debug.xcconfig"; path = "Target Support Files/Pods-Flick/Pods-Flick.debug.xcconfig"; sourceTree = "<group>"; };
+		53DD90B20946B361846D7155 /* Pods_Flick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0A732C26C42058001BA80B /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		7F0A733026C428BE001BA80B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		7F0A733226C45B8B001BA80B /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		7F0A733426C45C3F001BA80B /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		7F0A733626C45D99001BA80B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7F0A733926C45E50001BA80B /* SideMenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContent.swift; sourceTree = "<group>"; };
+		7F0A733B26C46186001BA80B /* SingleProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductView.swift; sourceTree = "<group>"; };
+		7F2D60F926C7DD0200BE4554 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		7F2D60FB26C8163400BE4554 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		7F49F00826C3F18E009B1BD4 /* Flick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F49F00B26C3F18F009B1BD4 /* FlickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickApp.swift; sourceTree = "<group>"; };
+		7F49F00D26C3F18F009B1BD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F49F00F26C3F190009B1BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F49F01226C3F190009B1BD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F49F01426C3F190009B1BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F49F01A26C3FCD6009B1BD4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7F4D561526C567F4000DF06C /* SingleCartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCartItemView.swift; sourceTree = "<group>"; };
+		7F61ECD926D00AAD007A7A2F /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		7F7705DE26C56CBA00C217CD /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
+		7F7705E026C57BBB00C217CD /* ShoppingCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewModel.swift; sourceTree = "<group>"; };
+		7FA2C77E26C4131800996B23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7FA2C78026C4137B00996B23 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		7FA2C78226C413B900996B23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7FA2C78426C415F200996B23 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		7FA2C78626C41B3E00996B23 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7FA2C78826C41BAD00996B23 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		7FA2C78A26C41C6000996B23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D679A647C41905256A591C87 /* Pods-Flick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.release.xcconfig"; path = "Target Support Files/Pods-Flick/Pods-Flick.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F49F00526C3F18E009B1BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D041837BABC235A49CD1BE6B /* Pods_Flick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A68C83A4E318300F327D464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				213361DB23329A3A7D99B709 /* Pods-Flick.debug.xcconfig */,
+				D679A647C41905256A591C87 /* Pods-Flick.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6800AB7BC695721D459FE557 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53DD90B20946B361846D7155 /* Pods_Flick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F0A732626C41F92001BA80B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2C78026C4137B00996B23 /* AuthViewModel.swift */,
+				7FA2C78826C41BAD00996B23 /* ProductsViewModel.swift */,
+				7F7705E026C57BBB00C217CD /* ShoppingCartViewModel.swift */,
+				7F2D60F926C7DD0200BE4554 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F0A732726C41FB5001BA80B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2C78226C413B900996B23 /* User.swift */,
+				7FA2C78426C415F200996B23 /* CartItem.swift */,
+				7FA2C78626C41B3E00996B23 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F0A732826C41FC4001BA80B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2C78A26C41C6000996B23 /* Constants.swift */,
+				7F0A733226C45B8B001BA80B /* Functions.swift */,
+				7F0A733626C45D99001BA80B /* Extensions.swift */,
+				7F61ECD926D00AAD007A7A2F /* Other.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7F0A732926C41FEF001BA80B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F0A733826C45E40001BA80B /* Side Menu */,
+				7F49F00D26C3F18F009B1BD4 /* ContentView.swift */,
+				7F0A732C26C42058001BA80B /* ProductsView.swift */,
+				7F0A733426C45C3F001BA80B /* AuthenticationView.swift */,
+				7F0A733B26C46186001BA80B /* SingleProductView.swift */,
+				7F4D561526C567F4000DF06C /* SingleCartItemView.swift */,
+				7F7705DE26C56CBA00C217CD /* ShoppingCartView.swift */,
+				7F2D60FB26C8163400BE4554 /* Banner.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F0A732A26C42009001BA80B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F0A732B26C42017001BA80B /* Views */,
+				7F0A732826C41FC4001BA80B /* Helper */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F0A732B26C42017001BA80B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F49F01A26C3FCD6009B1BD4 /* CustomTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F0A733826C45E40001BA80B /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7F0A733026C428BE001BA80B /* SideMenu.swift */,
+				7F0A733926C45E50001BA80B /* SideMenuContent.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		7F49EFFF26C3F18E009B1BD4 = {
+			isa = PBXGroup;
+			children = (
+				7F49F00A26C3F18E009B1BD4 /* Flick */,
+				7F49F00926C3F18E009B1BD4 /* Products */,
+				5A68C83A4E318300F327D464 /* Pods */,
+				6800AB7BC695721D459FE557 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F49F00926C3F18E009B1BD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F49F00826C3F18E009B1BD4 /* Flick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F49F00A26C3F18E009B1BD4 /* Flick */ = {
+			isa = PBXGroup;
+			children = (
+				7F0A732A26C42009001BA80B /* Utils */,
+				7F0A732926C41FEF001BA80B /* View */,
+				7F0A732726C41FB5001BA80B /* Model */,
+				7F0A732626C41F92001BA80B /* ViewModel */,
+				7F49F00B26C3F18F009B1BD4 /* FlickApp.swift */,
+				7F49F00F26C3F190009B1BD4 /* Assets.xcassets */,
+				7F49F01426C3F190009B1BD4 /* Info.plist */,
+				7FA2C77E26C4131800996B23 /* GoogleService-Info.plist */,
+				7F49F01126C3F190009B1BD4 /* Preview Content */,
+			);
+			path = Flick;
+			sourceTree = "<group>";
+		};
+		7F49F01126C3F190009B1BD4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F49F01226C3F190009B1BD4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F49F00726C3F18E009B1BD4 /* Flick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F49F01726C3F190009B1BD4 /* Build configuration list for PBXNativeTarget "Flick" */;
+			buildPhases = (
+				187CE8ADD5AE7B6A164C6141 /* [CP] Check Pods Manifest.lock */,
+				7F49F00426C3F18E009B1BD4 /* Sources */,
+				7F49F00526C3F18E009B1BD4 /* Frameworks */,
+				7F49F00626C3F18E009B1BD4 /* Resources */,
+				C3D36A055DCD22307D5D2DF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flick;
+			productName = Flick;
+			productReference = 7F49F00826C3F18E009B1BD4 /* Flick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F49F00026C3F18E009B1BD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7F49F00726C3F18E009B1BD4 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 7F49F00326C3F18E009B1BD4 /* Build configuration list for PBXProject "Flick" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F49EFFF26C3F18E009B1BD4;
+			productRefGroup = 7F49F00926C3F18E009B1BD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F49F00726C3F18E009B1BD4 /* Flick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F49F00626C3F18E009B1BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F49F01326C3F190009B1BD4 /* Preview Assets.xcassets in Resources */,
+				7FA2C77F26C4131800996B23 /* GoogleService-Info.plist in Resources */,
+				7F49F01026C3F190009B1BD4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187CE8ADD5AE7B6A164C6141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3D36A055DCD22307D5D2DF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flick/Pods-Flick-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flick/Pods-Flick-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F49F00426C3F18E009B1BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F0A733C26C46186001BA80B /* SingleProductView.swift in Sources */,
+				7FA2C78126C4137B00996B23 /* AuthViewModel.swift in Sources */,
+				7F49F00E26C3F18F009B1BD4 /* ContentView.swift in Sources */,
+				7FA2C78926C41BAD00996B23 /* ProductsViewModel.swift in Sources */,
+				7F0A733126C428BE001BA80B /* SideMenu.swift in Sources */,
+				7F0A733526C45C3F001BA80B /* AuthenticationView.swift in Sources */,
+				7F49F00C26C3F18F009B1BD4 /* FlickApp.swift in Sources */,
+				7F0A733A26C45E50001BA80B /* SideMenuContent.swift in Sources */,
+				7F61ECDA26D00AAD007A7A2F /* Other.swift in Sources */,
+				7F0A732D26C42058001BA80B /* ProductsView.swift in Sources */,
+				7FA2C78326C413B900996B23 /* User.swift in Sources */,
+				7F7705DF26C56CBA00C217CD /* ShoppingCartView.swift in Sources */,
+				7F2D60FC26C8163400BE4554 /* Banner.swift in Sources */,
+				7FA2C78526C415F200996B23 /* CartItem.swift in Sources */,
+				7F49F01B26C3FCD6009B1BD4 /* CustomTextField.swift in Sources */,
+				7F2D60FA26C7DD0200BE4554 /* UserViewModel.swift in Sources */,
+				7FA2C78726C41B3E00996B23 /* Product.swift in Sources */,
+				7F4D561626C567F4000DF06C /* SingleCartItemView.swift in Sources */,
+				7F7705E126C57BBB00C217CD /* ShoppingCartViewModel.swift in Sources */,
+				7FA2C78B26C41C6000996B23 /* Constants.swift in Sources */,
+				7F0A733326C45B8B001BA80B /* Functions.swift in Sources */,
+				7F0A733726C45D99001BA80B /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7F49F01526C3F190009B1BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F49F01626C3F190009B1BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F49F01826C3F190009B1BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213361DB23329A3A7D99B709 /* Pods-Flick.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Flick/Preview Content\"";
+				DEVELOPMENT_TEAM = C2FCSXGG97;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Flick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaselimi.Flickx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F49F01926C3F190009B1BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D679A647C41905256A591C87 /* Pods-Flick.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Flick/Preview Content\"";
+				DEVELOPMENT_TEAM = C2FCSXGG97;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Flick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaselimi.Flickx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F49F00326C3F18E009B1BD4 /* Build configuration list for PBXProject "Flick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F49F01526C3F190009B1BD4 /* Debug */,
+				7F49F01626C3F190009B1BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F49F01726C3F190009B1BD4 /* Build configuration list for PBXNativeTarget "Flick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F49F01826C3F190009B1BD4 /* Debug */,
+				7F49F01926C3F190009B1BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F49F00026C3F18E009B1BD4 /* Project object */;
+}
