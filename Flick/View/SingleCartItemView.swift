@@ -23,6 +23,7 @@ struct SingleCartItemView: View {
             
             VStack(alignment: .leading, spacing: 10) {
                 Text(cartItem.name)
+                    .font(.system(size: 16))
                 HStack {
                     Button(action: {
                         cartViewModel.decreaseQuantity(cartItem: cartItem)
