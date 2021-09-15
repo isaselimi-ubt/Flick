@@ -20,12 +20,12 @@ extension View {
     }
     
     @ViewBuilder func `if`<Content: View>(_ condition: Bool, transform: (Self) -> Content) -> some View {
-          if condition {
-              transform(self)
-          } else {
-              self
-          }
-      }
+        if condition {
+            transform(self)
+        } else {
+            self
+        }
+    }
 }
 
 extension Color {
@@ -37,6 +37,12 @@ extension Color {
             blue: Double((hex >> 00) & 0xff) / 255,
             opacity: alpha
         )
+    }
+}
+
+extension Double {
+    var clean: String {
+        return self.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(self)
     }
 }
 

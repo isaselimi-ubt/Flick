@@ -77,8 +77,8 @@ class AuthViewModel: ObservableObject {
             withAnimation {
                 userSession = nil
                 UserViewModel.shared.user = nil
-                UserViewModel.listenerRegistration = nil
             }
+            UserViewModel.listenerRegistration = nil
         } catch {
             print("DEBUG: Could not log out")
         }

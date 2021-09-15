@@ -25,8 +25,12 @@ struct ContentView: View {
                 
             } else {
                 AuthenticationView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.white.edgesIgnoringSafeArea(.all))
+                    .transition(.move(edge: .leading))
             }
-        }.environmentObject(viewModel)
+        }
+        .environmentObject(viewModel)
     }
 }
 

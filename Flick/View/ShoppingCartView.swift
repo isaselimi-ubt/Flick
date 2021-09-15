@@ -29,7 +29,7 @@ struct ShoppingCartView: View {
                     .foregroundColor(.black)
                     
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Text("Pay ($\(userViewModel.totalPriceOfUserCart.description))")
+                        Text("Pay ($\(userViewModel.totalPriceOfUserCart.clean))")
                             .font(.system(size: 20))
                     })
                     .frame(width: UIScreen.screenWidth - 10, height: 50)

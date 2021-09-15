@@ -40,7 +40,7 @@ struct SingleCartItemView: View {
                 }
             }
             Spacer()
-            Text("$\(String(format: "%.1f", Double(cartItem.cost)))")
+            Text("$\(cartItem.cost.clean)")
                 .font(.system(size: 20)).bold()
         }
         .foregroundColor(.black)

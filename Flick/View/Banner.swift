@@ -14,7 +14,7 @@ struct BannerModifier: ViewModifier {
     func body(content: Content) -> some View {
         ZStack {
             content
-            if data.count > 0 {
+            if data.count >= 0 {
                 ZStack {
                     ForEach(data, id: \.id) { bannerItem in
                         VStack {

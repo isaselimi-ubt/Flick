@@ -35,7 +35,7 @@ struct SingleProductView: View {
             .padding(10)
             
             HStack {
-                Text("$\(product.price)")
+                Text("$\(Double(product.price)!.clean)")
                     .font(.system(size: 19))
                     .bold()
                 Spacer()
