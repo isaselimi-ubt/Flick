@@ -8,7 +8,6 @@
 import SwiftUI
 import Kingfisher
 
-
 struct ContentView: View {
     
     @StateObject var viewModel = AuthViewModel.shared

@@ -16,7 +16,6 @@ struct SingleCartItemView: View {
     var body: some View {
         HStack {
             KFImage(URL(string: cartItem.image))
-                .loadImmediately()
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 90, height: 90)

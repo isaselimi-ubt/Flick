@@ -33,7 +33,7 @@ struct AuthenticationView: View {
                     Button(action: {
                         !isRegistering ? viewModel.login(email: email, password: password) : viewModel.registerUser(email: email, password: password, name: name)
                     }, label: {
-                        if viewModel.showProgressiveView {
+                        if viewModel.showProgressView {
                             ProgressView()
                                 .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                                 .font(.system(size: 14).bold())

@@ -13,7 +13,7 @@ class AuthViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
     @Published var bannerData = [BannerModifier.BannerData]()
-    @Published var showProgressiveView = false
+    @Published var showProgressView = false
     
     static let shared = AuthViewModel()
     
@@ -22,9 +22,9 @@ class AuthViewModel: ObservableObject {
     }
     
     func login(email: String, password: String) {
-        showProgressiveView = true
+        showProgressView = true
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            self.showProgressiveView = false
+            self.showProgressView = false
             if error != nil {
                 self.showBanner(title: "Error", description: "Failed to log in")
                 return
@@ -38,9 +38,9 @@ class AuthViewModel: ObservableObject {
     }
     
     func registerUser(email: String, password: String, name: String) {
-        showProgressiveView = true
+        showProgressView = true
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-            self.showProgressiveView = false
+            self.showProgressView = false
             if let error = error {
                 print("DEBUG: Error " + error.localizedDescription)
                 self.showBanner(title: "Error", description: "Could not register")

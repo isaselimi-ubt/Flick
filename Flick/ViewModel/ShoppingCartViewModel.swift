@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 import Firebase
 
-
 class ShoppingCartViewModel: ObservableObject {
     
     @ObservedObject var userViewModel = UserViewModel.shared
@@ -39,10 +38,10 @@ class ShoppingCartViewModel: ObservableObject {
         }
     }
     
-    func removeCartItem(cartItem: CartItem, isUpdatingCardItemQuantity: Bool) {
+    func removeCartItem(cartItem: CartItem, isUpdatingCartItemQuantity: Bool) {
         try! userViewModel.updateUserData(dict: [
             "cart" : FieldValue.arrayRemove([cartItem.toDictionary()])
-        ], isUpdatingQuantity: isUpdatingCardItemQuantity)
+        ], isUpdatingQuantity: isUpdatingCartItemQuantity)
     }
     
     
@@ -52,9 +51,9 @@ class ShoppingCartViewModel: ObservableObject {
     
     func decreaseQuantity(cartItem: CartItem) {
         if cartItem.quantity == 1 {
-            removeCartItem(cartItem: cartItem, isUpdatingCardItemQuantity: false)
+            removeCartItem(cartItem: cartItem, isUpdatingCartItemQuantity: false)
         } else {
-            removeCartItem(cartItem: cartItem, isUpdatingCardItemQuantity: true)
+            removeCartItem(cartItem: cartItem, isUpdatingCartItemQuantity: true)
             cartItem.quantity -= 1
             try! userViewModel.updateUserData(dict: [
                 "cart" : FieldValue.arrayUnion([cartItem.toDictionary()])
@@ -63,7 +62,7 @@ class ShoppingCartViewModel: ObservableObject {
     }
     
     func increaseQuantity(cartItem: CartItem) {
-        removeCartItem(cartItem: cartItem, isUpdatingCardItemQuantity: true)
+        removeCartItem(cartItem: cartItem, isUpdatingCartItemQuantity: true)
         cartItem.quantity += 1
         try! userViewModel.updateUserData(dict: [
             "cart" : FieldValue.arrayUnion([cartItem.toDictionary()])

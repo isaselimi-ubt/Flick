@@ -11,12 +11,22 @@ import Firebase
 class UserViewModel: ObservableObject {
     
     var authViewModel: AuthViewModel = AuthViewModel.shared
-    
     static var shared: UserViewModel = UserViewModel()
+    
+    static var listenerRegistration: ListenerRegistration?
+    var isChangingCartItemQuantity = false
+    
+    var user: User? {
+        willSet {
+            if !isChangingCartItemQuantity {
+                objectWillChange.send()
+            }
+        }
+    }
     
     var totalPriceOfUserCart = 0.0 {
         willSet {
-            if !isChangingCardItemQuantity {
+            if !isChangingCartItemQuantity {
                 objectWillChange.send()
             }
         }
@@ -24,16 +34,6 @@ class UserViewModel: ObservableObject {
     
     init() {
         fetchUser()
-    }
-    
-    static var listenerRegistration: ListenerRegistration?
-    var isChangingCardItemQuantity = false
-    var user: User? {
-        willSet {
-            if !isChangingCardItemQuantity {
-                objectWillChange.send()
-            }
-        }
     }
     
     func fetchUser() {
@@ -45,13 +45,13 @@ class UserViewModel: ObservableObject {
             guard let data = snapshot?.data() else { return }
             self.user = User(dictionary: data)
             self.changeCartTotalPrice()
-            self.isChangingCardItemQuantity = false
+            self.isChangingCartItemQuantity = false
             // print("DEBUG: User is " + self.user!.username)
         }
     }
     
     func updateUserData(dict: [String : Any], isUpdatingQuantity: Bool) throws {
-        isChangingCardItemQuantity = isUpdatingQuantity
+        isChangingCartItemQuantity = isUpdatingQuantity
         COLLECTION_USERS.document(authViewModel.userSession!.uid).updateData(dict)
     }
     

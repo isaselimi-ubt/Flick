@@ -18,7 +18,6 @@ struct SingleProductView: View {
         
         VStack {
             KFImage(URL(string: product.image))
-                .loadImmediately()
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 170, height: 170)
